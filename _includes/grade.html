@@ -1,0 +1,19 @@
+<section>
+    <div class="container">
+        <div class="section column">
+            <h1 class="section-title">{{ site.data.grade.title }}</h1>
+            <p class="section-paragraph">{{ site.data.grade.description }}</p>
+            <div class="grade-wrap">
+                {% for grade in site.data.grade.grade %}
+                <div class="grade">
+                    <img src="{{ grade.image }}" class="grade-image" alt="{{ grade.name }}">
+                    <div class="grade-column">
+                        <div class="grade-name">{{ grade.name }}</div>
+                        <div class="grade-description">{{ grade.description }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,27 @@
+<section>
+    <div class="container">
+        <div class="section column center">
+            <h1 class="section-title">{{ site.data.team.title }}</h1>
+            <div class="team-wrap">
+                {% for member in site.data.team.team %}
+                <div class="member">
+                    <img src="{{ member.photo }}" class="member-photo" alt="{{ member.name }}">
+                    <div class="member-name">{{ member.name }}</div>
+                    <div class="member-role">{{ member.role }}</div>
+                    <div class="member-description" id="member-description-{{ forloop.index }}">{{ member.description }}</div>
+                    <div class="member-socs-wrap" id="member-socs-{{ forloop.index }}">
+                        {% for social in member.socials %}
+                        <a href="{{ social.link }}" class="member-soc-link" target="_blank" rel="noopener noreferrer">
+                            <img src="{{ social.icon }}" class="member-soc-icon" alt="{{ social.name }} icon">
+                        </a>
+                        {% endfor %}
+                    </div>
+                    <a href="#" id="member-arrow-{{ forloop.index }}" class="member-arrow">
+                        <img src="assets/images/arrow.png" alt="Expand arrow">
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
