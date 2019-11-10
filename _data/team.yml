@@ -1,0 +1,37 @@
+title: Meet the team
+team:
+  - name: Michael Svoboda
+    photo: assets/images/team/MichaelSvoboda.jpg
+    role: CEO
+    description: 15+ years experience in building digital products and services
+    socials:
+    - name: Linkedin
+      link: https://www.linkedin.com/in/michaelsvoboda2/
+      icon: assets/images/soc/lin.png
+
+  - name: Nils Bundi
+    photo: assets/images/team/NilsBundi.jpg
+    role: CPO & FinTech Lead
+    description: Quant & Financial Engineer, Ariadne Co-Founder and ACTUS core team member
+    socials:
+      - name: Linkedin
+        link: https://www.linkedin.com/in/nils-andri-bundi-6246b998/
+        icon: assets/images/soc/lin.png
+
+  - name: Johannes Pfeffer
+    photo: assets/images/team/JohannesPfeffer.jpg
+    role: CTO & Blockchain lead
+    description: Alethio Co-Founder, formerly ConsenSys, specialized in data science
+    socials:
+    - name: Linkedin
+      link: https://www.linkedin.com/in/johannes-pfeffer-ab42702a/
+      icon: assets/images/soc/lin.png
+
+  - name: Johannes Escherich
+    photo: assets/images/team/JohannesEscherich.jpg
+    role: Ethereum Full-Stack Dev
+    description: Specialized in Ethereum, Previously at T-Systems MMS
+    socials:
+    - name: Linkedin
+      link: https://linkedin.com/in/johannes-escherich/
+      icon: assets/images/soc/lin.png

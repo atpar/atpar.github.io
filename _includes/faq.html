@@ -1,0 +1,22 @@
+{% if site.data.faq.showSection %}
+<section class="bg-blue">
+    <div class="container">
+        <div class="section column">
+            <h1 class="section-title">{{ site.data.faq.title }}</h1>
+            <div class="faq-wrap">
+                {% for faq in site.data.faq.faq %}
+                <div class="faq">
+                    <div class="faq-header">
+                        <div class="faq-question">{{ faq.question }}</div>
+                        <a href="#" class="faq-arrow" id="faq-{{ forloop.index }}">
+                            <img src="assets/images/faq-arrow.png" alt="Expand arrow">
+                        </a>
+                    </div>
+                    <div class="faq-answer" id="answer-{{ forloop.index }}">{{ faq.answer }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
