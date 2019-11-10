@@ -1,0 +1,16 @@
+{% if site.data.partners.showSection %}
+<section>
+    <div class="container">
+        <div class="section column center">
+            <h1 class="section-title">{{ site.data.partners.title }}</h1>
+            <div class="partners-wrap">
+                {% for partner in site.data.partners.partners %}
+                <a class="partner-link" href="{{ partner.link }}" rel="noopener noreferrer" target="_blank">
+                    <img src="{{ partner.image }}" class="partner-logo" alt="{{ partner.name }}">
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

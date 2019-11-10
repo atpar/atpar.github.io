@@ -1,0 +1,17 @@
+<header class="bg-blue">
+    <div class="container">
+        <div class="header">
+            <a href="{{ site.url }}" class="logo-link">
+                <img height="{{ site.data.header.logoHeight }}" src="{{ site.data.header.logo }}">
+            </a>
+            <div class="header-soc-wrap">
+
+                {% for item in site.data.header.socials %}
+                <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer" class="header-soc-link">
+                    <img src="{{ item.image }}" alt="{{ item.name }} icon">
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,18 @@
+title: Ecosystem Benefits
+
+description: |
+  Create substantial productivity gains and profit from an
+  ecosystem with strong network effects.
+
+benefits:
+  - image: assets/images/frictionless.gif
+    name: Frictionless
+    description: Save cost by automating integration and servicing of assets
+
+  - image: assets/images/liquid.gif
+    name: Liquid
+    description: Lower barriers to entry – access to all assets from any issuer
+
+  - image: assets/images/transparent.gif
+    name: Transparent
+    description: Reduce risk with economically transparent asset portfolios
