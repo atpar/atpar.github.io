@@ -4,7 +4,7 @@ description: |
 
   The ACTUS Protocol smart contract framework represents financial contracts and their logic on Ethereum as modular, “Lego”-like building blocks.
 
-subscribePlaceholder: Enter your e-mail to subscribe
+subscribePlaceholder: Enter your e-mail
 subscribeButton: Keep me updated
 
 image: assets/images/containers.jpg
