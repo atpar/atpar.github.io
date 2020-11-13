@@ -1,0 +1,405 @@
+.header
+  position: relative
+  overflow: hidden
+
+.home-hero
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 38px 0 25px
+
+  +media(m, 90px)
+    padding: 172px 0 442px
+
+  +media(s)
+    padding: 40px 0 228px
+
+.home-hero__content
+  position: relative
+  z-index: 1
+  
+.hero-image
+  +media(m, 90px)
+    position: absolute
+    bottom: -50px
+    right: -25px
+    
+  +media(s)
+    max-width: 320px
+    right: 0
+    bottom: -280px
+
+.home-hero__title
+  font-family: 'ChromaticaTrial-Bold'
+  font-size: 56px
+  line-height: 64px
+  color: #121824
+
+  +media(s)
+    font-size: 32px
+    line-height: 120%
+
+.home-hero__slogan
+  padding: 40px 0 56px
+  font-family: 'ChromaticaTrial-Black'
+  font-weight: 900
+  font-size: 88px
+  line-height: 80px
+  background: -webkit-linear-gradient(0deg, #75B8FF 3.45%, #A390ED 88.9%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+  +media(s)
+    padding: 0 0 40px
+    font-size: 64px
+    line-height: 80px
+
+.depository
+  position: relative
+  padding: 96px 0
+
+  +media(s)
+    padding: 80px 0
+
+.depository__title
+  margin-bottom: 8px
+
+.depository-list
+  display: flex
+  justify-content: space-between
+  margin-top: 40px
+
+  +media(m, -50px)
+    flex-direction: column
+    align-items: center
+    margin-top: 48px
+
+  +media(s)
+    margin-top: 40px
+
+.depository-list__item
+  max-width: 255px
+  text-align: center
+
+.depository-list__item + .depository-list__item
+  +media(m, -50px)
+    margin-top: 40px
+
+.depository-list__icon-wrapper
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 72px
+  height: 72px
+  margin: 0 auto 24px
+  background: #FFFFFF
+  border-radius: 50%
+
+  +media(s)
+    width: 56px
+    height: 56px
+    margin-bottom: 8px
+  
+.depository-list__title
+  margin-bottom: 32px
+  font-weight: bold
+  font-size: 24px
+  line-height: 150%
+  text-align: center
+  color: #FFFFFF
+
+  +media(m, -50px)
+    margin-bottom: 8px
+  
+  +media(s)
+    font-size: 18px
+    line-height: 150%
+
+.depository-list__text
+  text-align: center
+  
+.feedback
+  padding: 202px 0 80px
+
+  +media(m)
+    padding: 120px 0 80px
+
+  +media(m)
+    padding: 122px 40px
+
+.feedback__list
+  display: flex
+  flex-wrap: wrap
+
+  +media(m)
+    flex-direction: column
+    align-items: center
+
+.feedback__item
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 31.3%
+  margin-right: 3%
+  margin-bottom: 70px
+  padding: 78px 30px 32px
+  background: #FFFFFF
+  box-shadow: 0px 8px 25px rgba(224, 228, 241, 0.5)
+  border-radius: 12px
+
+  +media(m)
+    max-width: initial
+    padding: 80px 24px 8px
+
+.feedback__item:nth-child(3n)
+  margin-right: 0
+
+.feedback__item::before
+  content: ''
+  position: absolute
+  top: 0
+  left: 50%
+  transform: translate(-50%, -42px)
+  width: 100px
+  height: 80px
+
+  +media(s)
+    width: 105px
+    height: 83px
+
+.feedback__item:nth-child(1)::before,
+.feedback__item:nth-child(4)::before
+  background: url('/assets/images/icons/quote-purple.svg') center no-repeat
+  background-size: contain
+  
+.feedback__item:nth-child(2)::before,
+.feedback__item:nth-child(5)::before
+  background: url('/assets/images/icons/quote-blue.svg') center no-repeat
+  background-size: contain
+
+.feedback__item:nth-child(3)::before,
+.feedback__item:nth-child(6)::before
+  background: url('/assets/images/icons/quote-pink.svg') center no-repeat
+  background-size: contain
+  
+.feedback__item + .feedback__item
+  +media(m)
+    margin: 70px 0 0
+  
+  +media(s)
+    margin: 80px 0 0
+  
+.feedback__text
+  flex-grow: 1
+  font-weight: bold
+  text-align: center
+  color: #4B5974
+
+  +media(m)
+    margin-bottom: 5px
+    
+.feedback__logo-wrapper
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 177px
+  width: 100%
+  height: 56px
+  margin: 22px auto 0
+
+  +media(m)
+    margin-top: 0
+
+  +media(s)
+    margin-top: 28px
+  
+.tokensoft-logo
+  width: 122px
+
+.metaco-logo
+  width: 84px
+
+.features
+  padding: 80px 0
+
+.features__row
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  margin-top: 40px
+
+  +media(m)
+    flex-direction: column
+    align-items: center
+  
+.laptop-img
+  +media(m, 90px)
+    margin-top: 40px
+  
+.features-card
+  width: 48.6%
+  margin-bottom: 30px
+  padding: 32px 16px 16px
+  background: #FFFFFF
+  box-shadow: 0px 8px 25px rgba(224, 228, 241, 0.5)
+  border-radius: 12px
+  text-align: right
+
+  +media(m)
+    width: 100%
+    max-width: 540px
+    margin-bottom: 0
+
+.features-card:nth-child(2)
+  margin-left: 2.7%
+
+  +media(m)
+    margin: 32px 0 0
+
+.features-card:last-child
+  width: 100%
+  padding-top: 44px
+
+  +media(m, 90px)
+    max-width: 640px
+    padding: 32px 37px 16px
+
+  +media(m)
+    margin-top: 77px
+
+.features-card__content
+  max-width: 428px
+  margin: 0 auto 33px
+  text-align: center
+
+.features-card:last-child .features-card__content
+  margin-bottom: 0
+
+.badge
+  display: inline-block
+  margin: 0 auto 16px
+  padding: 4px 16px
+  border-radius: 20px
+  font-weight: bold
+  font-size: 11px
+  line-height: 15px
+  text-align: center
+  letter-spacing: 0.4125px
+  text-transform: uppercase
+
+.badge--blue
+  background: rgba(147, 211, 233, 0.2)
+  color: #49BAE1
+
+.badge--green
+  color: #6FC6B6
+  background: rgba(159, 209, 201, 0.2)
+
+.badge--purple
+  color: #8F75FF
+  background: rgba(186, 170, 255, 0.2)
+
+.features-card__title
+  margin-bottom: 28px
+  font-weight: bold
+  font-size: 24px
+  line-height: 150%
+  color: #121824
+
+.features-card__list
+  text-align: left
+
+.features-card__item + .features-card__item
+  margin-top: 16px
+  
+.features-card__item
+  display: flex
+  align-items: center
+  padding: 3px 1px 3px 21px
+  font-size: 14px
+  line-height: 150%
+  color: #4B5974
+
+.features-card__item img
+  margin-right: 24px
+
+.features-card__row
+  display: flex
+  margin-bottom: 16px
+
+  +media(m, 90px)
+    flex-direction: column-reverse
+  
+.use-cases
+  padding-bottom: 160px
+
+.use-cases__subtitle
+  margin-bottom: 42px
+  
+.partners
+  padding: 0 0 160px
+
+.partners__title
+  margin-bottom: 8px
+  
+.partners__list
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  margin-top: 40px
+
+.partners__item
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 253px
+  width: 100%
+  height: 80px
+  margin-bottom: 24px
+
+.metaco-img
+  width: 121px
+
+.tokensoft-img
+  width: 175px
+
+.cashlink-img
+  width: 133px
+
+.dalw-img
+  width: 207px
+
+.thebond-img
+  width: 174px
+
+.poly-img
+  width: 104px
+  
+.cube
+  animation-name: floating
+  animation-duration: 3s
+  animation-iteration-count: infinite
+  animation-timing-function: ease-in-out
+
+.cube-2
+  animation-delay: -2s
+
+.cube-3
+  animation-delay: -3s
+
+.cube-4
+  animation-delay: -1s
+
+.cube-5
+  animation-delay: -2.5s
+
+.cube-5
+  animation-delay: -3.5s
+
+@keyframes floating
+  from 
+    transform: translate(0,  0) 
+  65%
+    transform: translate(0, 30px)
+  to
+    transform: translate(0, 0)    

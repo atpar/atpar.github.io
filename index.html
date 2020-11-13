@@ -1,3 +1,235 @@
 ---
 layout: default
+id: index
 ---
+<header class="header">
+	<div class="container">
+		{% include topbar.html %}
+		<div class="home-hero">
+			<div class="home-hero__content">
+				<h1 class="home-hero__title">Reimagine <br> capital markets</h1>
+				<p
+					class="typewrite home-hero__slogan"
+					data-period="2000"
+					data-type='["Simpler", "Faster", "More secure", "Transparent"]'
+				>
+					<span></span>
+				</p>
+				<a target="_blank" href="{{ site.contact }}" class="btn btn-primary">
+					<span class="btn-primary__background"></span>
+					<span class="btn-primary__hover"></span>
+					<span class="btn-primary__text">Request a Demo</span>
+				</a>
+			</div>
+			{% include hero-image.html %}
+		</div>
+	</div>
+</header>
+<main>
+	<section id="decentral_depository" class="depository section-dark">
+		<div class="container">
+			<h2 class="section-title section-title--light depository__title">Decentral Depository</h2>
+			<p class="section-subtitle section-subtitle--light">Home of digital securities</p>
+			<ul class="depository-list">
+				<li class="depository-list__item">
+					<div class="depository-list__icon-wrapper">
+						<img src="/assets/images/icons/lock.svg" alt="lock" class="depository-list__icon">
+					</div>
+					<h3 class="depository-list__title">Issue</h3>
+					<p class="depository-list__text text text--light">Create smart securities from templates and record them in your digital register</p>
+				</li>
+				<li class="depository-list__item">
+					<div class="depository-list__icon-wrapper">
+						<img src="/assets/images/icons/play.svg" alt="play" class="depository-list__icon">
+					</div>
+					<h3 class="depository-list__title">Service</h3>
+					<p class="depository-list__text text text--light">Automate corporate actions. Sit back. Relax.</p>
+				</li>
+				<li class="depository-list__item">
+					<div class="depository-list__icon-wrapper">
+						<img src="/assets/images/icons/play.svg" alt="play" class="depository-list__icon">
+					</div>
+					<h3 class="depository-list__title">Trade</h3>
+					<p class="depository-list__text text text--light">Fractionalize and transfer ownership with ease through digital tokens</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="feedback">
+		<div class="container">
+			<ul class="feedback__list">
+				<li class="feedback__item">
+					<p class="feedback__text text">We've been very impressed with the technology developed by atpar, we're excited to leverage their software to interface with traditional banks and to fully automate finance.</p>
+					<div class="feedback__logo-wrapper">
+						<img
+							src="/assets/images/logotypes/tokensoft@1x.png"
+							srcset="/assets/images/logotypes/tokensoft@2x.png"
+							alt="tokensoft logo"
+							class="feedback__logo tokensoft-logo"
+						>
+					</div>
+				</li>
+				<li class="feedback__item">
+					<p class="feedback__text text">Integrating with the atpar digital securities solution was straightforward and allows us to offer our clients a full-lifecycle service for DLT-based securities.</p>
+					<div class="feedback__logo-wrapper">
+						<img
+							src="/assets/images/logotypes/metaco@1x.png"
+							srcset="/assets/images/logotypes/metaco@2x.png"
+							alt="metaco logo"
+							class="feedback__logo metaco-logo"
+						>
+					</div>
+				</li>
+				<li class="feedback__item">
+					<p class="feedback__text text">Atpar provides a very sophisticated solution to manage financial contracts on the blockchain. Working with their team in the scope of our PoC has been a pleasure!</p>
+					<div class="feedback__logo-wrapper">
+						<img
+							src="/assets/images/logotypes/swisspeers@1x.png"
+							srcset="/assets/images/logotypes/swisspeers@2x.png"
+							alt="tokensoft logo"
+							class="feedback__logo swisspeers-logo"
+						>
+					</div>
+				</li>
+				<li class="feedback__item">
+					<p class="feedback__text text">Atpar provides not only a frictionless API to a complex set of technologies but also reduces time to market to an absolute minimum. It’s like AWS for Blockchain Financial Services.</p>
+					<div class="feedback__logo-wrapper">
+						<img
+							src="/assets/images/logotypes/2poly@1x.png"
+							srcset="/assets/images/logotypes/2poly@2x.png"
+							alt="metaco logo"
+							class="feedback__logo poly-img"
+						>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section id="features" class="features">
+		<div class="container">
+			<h2 class="section-title section-title--dark">Benefiting capital markets. <br> Benefiting you.</h2>
+			<div class="features__row">
+				<div class="features-card">
+					<div class="features-card__content">
+						<div class="badge badge--blue">The sellers</div>
+						<h3 class="features-card__title">For Originators</h3>
+						<ul class="features-card__list">
+							<li class="features-card__item">
+								<img src="/assets/images/icons/process.svg" alt="process">
+								Issue more digital securities - faster and at lower cost.
+							</li>
+							<li class="features-card__item">
+								<img src="/assets/images/icons/rocket.svg" alt="rocket">
+								Access a wide range of securities templates. Create your own templates on a need basis
+							</li>
+							<li class="features-card__item">
+								<img src="/assets/images/icons/pull-request.svg" alt="pull request">
+								Seamless integration with your enterprise systems and processes through our APIs
+							</li>
+							<li class="features-card__item">
+								<img src="/assets/images/icons/thumbs-up.svg" alt="thumbs up">
+								Pay-as-you-go
+							</li>
+						</ul>
+					</div>
+					<a href="/product.html" class="arrow-link">DISCOVER MORE</a>
+				</div>
+				<div class="features-card">
+					<div class="features-card__content">
+						<div class="badge badge--green">The buyers</div>
+						<h3 class="features-card__title">For Investors</h3>
+						<ul class="features-card__list">
+							<li class="features-card__item">
+								<img src="/assets/images/icons/eye.svg" alt="eye">
+								‘Know-you-product’ and understand your investment risk
+							</li>
+							<li class="features-card__item">
+								<img src="/assets/images/icons/key.svg" alt="key">
+								Turn non-bankable assets into bankable ones and unlock higher yields
+							</li>
+							<li class="features-card__item">
+								<img src="/assets/images/icons/portfolio.svg" alt="portfolio">
+								Monitor your portfolio in real-time
+							</li>
+							<li class="features-card__item">
+								<img src="/assets/images/icons/bell.svg" alt="bell">
+								Receive notifications about corporate actions to your smart phone
+							</li>
+						</ul>
+					</div>
+					<a href="/product.html" class="arrow-link">DISCOVER MORE</a>
+				</div>
+				<div class="features-card">
+					<div class="features-card__row">
+						<img class="laptop-img" src="/assets/images/laptop.svg" alt="laptop">
+						<div class="features-card__content">
+							<div class="badge badge--purple">Dive deep into technical details</div>
+							<h3 class="features-card__title">For Developers</h3>
+							<ul class="features-card__list">
+								<li class="features-card__item">
+									<img src="/assets/images/icons/eye.svg" alt="eye">
+									‘Know-you-product’ and understand your investment risk
+								</li>
+								<li class="features-card__item">
+									<img src="/assets/images/icons/key.svg" alt="key">
+									Turn non-bankable assets into bankable ones and unlock higher yields
+								</li>
+								<li class="features-card__item">
+									<img src="/assets/images/icons/portfolio.svg" alt="portfolio">
+									Monitor your portfolio in real-time
+								</li>
+								<li class="features-card__item">
+									<img src="/assets/images/icons/bell.svg" alt="bell">
+									Receive notifications about corporate actions to your smart phone
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="/product.html" class="arrow-link">DISCOVER MORE</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	{% include cta.html %}
+	<section class="use-cases">
+		<div class="container">
+			<h2 class="section-title section-title--dark">Use cases</h2>
+			<p class="section-subtitle use-cases__subtitle">See how diverse players participate in <b>Trustless Capital Markets</b></p>
+		</div>
+		<div class="use-cases-container">
+			{% include use-cases.html %}
+		</div>
+	</section>
+	<section id="partners" class="partners">
+		<div class="container">
+			<h2 class="section-title partners__title">Partners</h2>
+			<p class="section-subtitle section-subtitle--dark"><b>We collaborate</b> with major digital assets custodians and tokenization platforms</p>
+			<ul class="partners__list">
+				<li class="partners__item">
+					<img class="metaco-img" src="/assets/images/logotypes/metaco@1x.png" srcset="/assets/images/logotypes/metaco@2x.png" alt="metaco">
+				</li>
+				<li class="partners__item">
+					<img class="tokensoft-img" src="/assets/images/logotypes/tokensoft@1x.png" srcset="/assets/images/logotypes/tokensoft@2x.png" alt="tokensoft">
+				</li>
+				<li class="partners__item">
+					<img class="cashlink-img" src="/assets/images/logotypes/cashlink@1x.png" srcset="/assets/images/logotypes/cashlink@2x.png" alt="cashlink">
+				</li>
+				<li class="partners__item">
+					<img class="dalw-img" src="/assets/images/logotypes/dalw@1x.png" srcset="/assets/images/logotypes/dalw@2x.png" alt="dalaw">
+				</li>
+				<li class="partners__item">
+					<img class="thebond-img" src="/assets/images/logotypes/thebond@1x.png" srcset="/assets/images/logotypes/thebond@2x.png" alt="bond factory">
+				</li>
+				<li class="partners__item">
+					<img class="poly-img" src="/assets/images/logotypes/2poly@1x.png" srcset="/assets/images/logotypes/2poly@2x.png" alt="2poly">
+				</li>
+				<li class="partners__item">
+					<img class="fountnain-img" src="/assets/images/logotypes/fountain.svg" alt="fountain">
+				</li>
+			</ul>
+		</div>
+	</section>
+</main>
+
+<script src="/assets/js/text-animation.js"></script>
+	

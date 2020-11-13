@@ -1,0 +1,69 @@
+.top-bar
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.logo
+  width: 150px
+  height: 58px
+
+.nav
+  display: flex
+  width: 100%
+
+  +media(s, 167px)
+    display: none
+    position: fixed
+    top: 0
+    right: 0
+    flex-direction: column
+    align-items: center
+    height: 100%
+    max-width: 240px
+    width: 100%
+    padding: 16px 16px 32px
+    background: #121824
+    z-index: 10
+  
+.nav.open
+  +media(s, 167px)
+    display: flex
+  
+.nav__list
+  display: flex
+  align-items: center
+  margin: 0 auto
+
+  +media(s, 167px)
+    flex-direction: column
+    flex-grow: 1
+  
+.nav__item + .nav__item
+  margin-left: 40px
+
+  +media(s, 167px)
+    margin: 40px 0 0
+
+.nav__link
+  font-weight: bold
+  font-size: 11px
+  line-height: 15px
+  text-align: center
+  letter-spacing: 0.4125px
+  color: #4B5974
+
+  +media(s, 167px)
+    color: #FFFFFF
+
+.nav__link.active
+  color: #121824
+
+.menu-close
+  +media(s, 167px)
+    display: flex
+    margin-bottom: 51px
+    align-self: flex-end
+
+.menu-open
+  +media(s, 167px)
+    display: flex

@@ -1,0 +1,83 @@
+.btn
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  font-weight: 800
+  border-radius: 35px
+
+.btn-primary
+  flex: 0 0 auto
+  padding: 12px 48px
+  font-size: 18px
+  line-height: 25px
+  transition: color .5s cubic-bezier(.165,.84,.44,1)
+  position: relative
+  overflow: hidden
+  transform: translateZ(0)
+  background-color: transparent
+
+  +media(s)
+    font-size: 16px
+    line-height: 22px
+
+.btn-primary__background
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  opacity: 1
+  background: #121824
+  transition: opacity .5s cubic-bezier(.165,.84,.44,1)
+  
+.btn-primary:hover .btn-primary__background
+  opacity: 0
+
+.btn-primary__hover
+  position: absolute
+  bottom: 0
+  left: 50%
+  width: 300px
+  height: 300px
+  background-color: #f9fafb
+  transform: translateZ(0) translate(-50%,50%) scale(0)
+  transition: transform .5s cubic-bezier(.165,.84,.44,1)
+  will-change: transform
+  pointer-events: none
+  border-radius: 50%
+
+.btn-primary:hover .btn-primary__hover
+  transform: translateZ(0) translate(-50%,50%) scale(1)
+
+.btn-primary__text
+  z-index: 0
+  color: #FFFFFF
+
+.btn-primary:hover .btn-primary__text
+  color: #121824
+  
+.btn--secondary
+  padding: 12px 44px
+  font-size: 11px
+  line-height: 15px
+  border: 2px solid #121824
+  color: #121824
+
+.arrow-link
+  position: relative
+  padding-right: 24px
+  font-weight: bold
+  font-size: 11px
+  line-height: 15px
+  letter-spacing: 0.4125px
+  color: #3F9DFF
+
+.arrow-link::after
+  content: ''
+  position: absolute
+  top: -1px
+  right: 0
+  width: 16px
+  height: 16px
+  background: url('/assets/images/icons/arrow-right.svg') center no-repeat
+  background-size: contain

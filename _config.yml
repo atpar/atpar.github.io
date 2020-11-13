@@ -1,20 +1,9 @@
-title: AFP
-url: "https://atpar.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/" # the subpath of your site, e.g. /afp
-
-# Build settings
-markdown: kramdown
-#theme: minima
-
-plugins:
-  - jekyll-autoprefixer
-
-autoprefixer:
-  browsers:
-  - last 2 versions
+contact: https://docs.google.com/forms/d/e/1FAIpQLScRI6-87ZwpBlFk44tTmJjnBnWK7LpeIaMQ85jAzId6gEYbKQ/viewform
+github: https://github.com/atpar
 
 sass:
-  add_charset: true
+  sass_dir: assets/styles
   style: :compressed
 
-# build exec jekyll serve
+exclude:
+  - .jekyll-cache/
