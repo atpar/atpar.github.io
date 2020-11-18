@@ -118,30 +118,53 @@
 .depository-list__text
   text-align: center
   
-.feedback
+.feedback-section
   padding: 202px 0 80px
 
   +media(m)
     padding: 120px 0 80px
 
-  +media(m)
-    padding: 122px 40px
+  +media(s)
+    padding: 122px 0 40px
 
-.feedback__list
-  display: flex
-  flex-wrap: wrap
+.feedback-section__content
+  position: relative
 
-  +media(m)
-    flex-direction: column
-    align-items: center
+.swiper-button-prev
+  width: 31px
+  height: 31px
+  left: -16px !important
 
-.feedback__item
+.swiper-button-prev:after
+  content: '' !important
+  width: 100%
+  height: 100%
+  background: url('/assets/images/icons/arrow-left.svg') center no-repeat
+
+.swiper-button-next
+  width: 31px
+  height: 31px
+  right: -16px !important
+  transform: rotate(180deg)
+
+.swiper-button-next:after
+  content: '' !important
+  width: 100%
+  height: 100%
+  background: url('/assets/images/icons/arrow-left.svg') center no-repeat
+  
+.feedback-list
+  margin: 0 -20px
+
+.feedback-wrapper
+  padding: 42px 20px
+  
+.feedback
   position: relative
   display: flex
   flex-direction: column
-  width: 31.3%
-  margin-right: 3%
-  margin-bottom: 70px
+  width: 100%
+  min-height: 350px
   padding: 78px 30px 32px
   background: #FFFFFF
   box-shadow: 0px 8px 25px rgba(224, 228, 241, 0.5)
@@ -151,10 +174,10 @@
     max-width: initial
     padding: 80px 24px 8px
 
-.feedback__item:nth-child(3n)
+.feedback:nth-child(3n)
   margin-right: 0
 
-.feedback__item::before
+.feedback::before
   content: ''
   position: absolute
   top: 0
@@ -167,22 +190,22 @@
     width: 105px
     height: 83px
 
-.feedback__item:nth-child(1)::before,
-.feedback__item:nth-child(4)::before
+.swiper-slide:nth-child(1) .feedback::before,
+.swiper-slide:nth-child(4) .feedback::before
   background: url('/assets/images/icons/quote-purple.svg') center no-repeat
   background-size: contain
   
-.feedback__item:nth-child(2)::before,
-.feedback__item:nth-child(5)::before
+.swiper-slide:nth-child(2) .feedback::before,
+.swiper-slide:nth-child(5) .feedback::before
   background: url('/assets/images/icons/quote-blue.svg') center no-repeat
   background-size: contain
 
-.feedback__item:nth-child(3)::before,
-.feedback__item:nth-child(6)::before
+.swiper-slide:nth-child(3) .feedback::before,
+.swiper-slide:nth-child(6) .feedback::before
   background: url('/assets/images/icons/quote-pink.svg') center no-repeat
   background-size: contain
   
-.feedback__item + .feedback__item
+.feedback + .feedback
   +media(m)
     margin: 70px 0 0
   
@@ -308,6 +331,9 @@
   line-height: 150%
   color: #121824
 
+  +media(m)
+    margin-bottom: 16px
+
 .features-card__list
   text-align: left
 
@@ -336,8 +362,16 @@
 .use-cases
   padding-bottom: 160px
 
+  +media(m)
+    padding: 80px 0 160px
+
 .use-cases__subtitle
   margin-bottom: 42px
+
+.use-cases__title,
+.use-cases__subtitle
+  +media(m)
+    text-align: left
   
 .partners
   padding: 0 0 160px
@@ -360,6 +394,9 @@
   height: 80px
   margin-bottom: 24px
 
+  +media(m)
+    max-width: 200px
+  
 .metaco-img
   width: 121px
 
@@ -377,6 +414,9 @@
 
 .poly-img
   width: 104px
+
+.bankhaus-img
+  width: 105px
   
 .cube
   animation-name: floating

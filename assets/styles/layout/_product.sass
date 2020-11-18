@@ -32,6 +32,12 @@
   color: #FFFFFF
   outline: none
 
+  +media(m)
+    max-width: 213px
+    padding: 18px 40px 18px 24px
+    font-size: 16px
+    line-height: 150%
+
 .services-list__button.active
   background: #19202F
   border-radius: 12px
@@ -51,6 +57,9 @@
 .services__sidebar
   max-width: 350px
   width: 100%
+  
+  +media(m)
+    max-width: 213px
   
 .services__content
   margin-left: 30px
@@ -74,17 +83,31 @@
   text-align: center
   color: #FFFFFF
 
+  +media(m)
+    font-size: 24px
+
 .service__text
   font-size: 20px
   line-height: 32px
   color: #FFFFFF
   text-align: left
+
+  +media(m)
+    font-size: 16px
+    line-height: 24px
   
 .service__text + .service__text
   margin-top: 30px
+
+  +media(m)
+    margin-top: 40px
   
 .benefits
   padding: 160px 0 29px
+  overflow: 
+
+  +media(m)
+    padding: 80px 0 40px
 
 .benefits__title
   margin-bottom: 8px
@@ -95,10 +118,17 @@
   justify-content: center
   margin: 80px -59px 0
 
+  +media(m, 90px)
+    margin: 80px -8px 0
+
 .benefits-list__item
   max-width: 168px
+  width: 100%
   margin: 0 59px 51px
   text-align: center
+
+  +media(m, 90px)
+    margin: 0 8px 40px
 
 .benefits-list__text
   margin-top: 24px
@@ -111,22 +141,49 @@
 .security
   padding: 80px 0
 
+  +media(m)
+    padding: 80px 0 0
+
 .security__row
   display: flex
+
+  +media(m)
+    flex-direction: column
+    justify-content: center
+    align-items: center
 
 .security__slogan
   max-width: 470px
   width: 100%
   padding-top: 40px
   text-align: left
+
+  +media(m)
+    max-width: initial
+
+  span
+    width: 417px
+    height: 130px
+    display: block
+
+    +media(m)
+      width: 100%
+      text-align: center
   
 .security__content
   max-width: 634px
   margin-right: 30px
 
+  +media(m)
+    margin: 0
+    text-align: center
+
 .security__title,
 .security__subtitle
   text-align: left
+
+  +media(m)
+    text-align: center
 
 .security__title,
 .security__subtitle
@@ -145,8 +202,17 @@
   justify-content: space-between
   margin-top: 80px
 
-.layers-img
+.layers-img-desktop
   max-width: 341px
+
+  +media(m)
+    display: none
+
+.layers-img-tablet
+  max-width: 246px
+
+  +media(m)
+    display: block
   
 .layers-list
   max-width: 728px
@@ -162,9 +228,13 @@
   margin-top: 40px
 
 .layer__title
+  margin-bottom: 10px
   font-size: 20px
   line-height: 150%
   color: #121824
+
+  +media(m)
+    font-size: 16px
   
 .layer__text
   font-size: 14px
@@ -173,6 +243,9 @@
   
 .open-source
   padding: 80px 0
+
+  +media(m)
+    padding: 80px 0 0
 
 .open-source__content
   padding: 56px 14px
@@ -184,3 +257,6 @@
   margin: 40px auto
   max-width: 724px
   text-align: center
+
+  +media(m)
+    max-width: 634px

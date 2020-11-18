@@ -1,10 +1,16 @@
 .mission
   padding: 0 0 80px
+
+  +media(m)
+    padding: 0
   
 .mission__inner
   padding: 63px 40px
   background: #121824
   border-radius: 12px
+
+  +media(m)
+    padding: 40px
 
 .mission__row
   display: flex
@@ -17,11 +23,18 @@
   max-width: 540px
   margin-left: 65px
 
+  +media(m)
+    max-width: 370px
+
 .mission__title
   text-align: right
   
 .mission__text
   text-align: right
+
+  +media(m)
+    font-size: 18px
+    line-height: 27px
 
 .team
   padding: 80px 0 0
@@ -29,6 +42,9 @@
 .team__title,
 .team__subtitle
   text-align: left
+
+  +media(l, 90px)
+    text-align: center
   
 .team__row
   display: flex
@@ -36,12 +52,30 @@
   padding-bottom: 80px
   border-bottom: 1px solid #E5E9F8
 
+  +media(l, 90px)
+    flex-direction: column
+    padding-bottom: 40px
+
 .team__description
   min-width: 350px
   margin-right: 77px
 
+  +media(l, 239px)
+    margin-right: 0
+
+  +media(l, 90px)
+    min-width: initial
+    max-width: 538px
+    margin: 0 auto 40px
+  
 .team-list
   display: flex
+
+  +media(l, 90px)
+    justify-content: center
+    flex-wrap: wrap
+    max-width: 440px
+    margin: 0 auto
 
 .team-item
   display: flex
@@ -52,9 +86,17 @@
   height: 200px
   padding-bottom: 32px
   border-radius: 12px
+  margin-right: 16px
 
-.team-item + .team-item
-  margin-left: 16px
+  +media(l, 90px)
+    margin: 0 40px 40px 0
+
+.team-item:last-child
+  margin-right: 0
+
+.team-item:nth-child(even)
+  +media(l, 90px)
+    margin-right: 0
 
 .team-item:nth-child(1)
   background: #FFE7EE
@@ -78,30 +120,60 @@
 
 .pioneers
   padding: 160px 0 80px
+
+  +media(m)
+    padding: 80px 0
   
 .pioneers__row
   display: flex
   justify-content: center
   margin-top: 40px
 
+  +media(m)
+    flex-direction: column
+
+.pioneers__row img + img
+  +media(m)
+    margin-top: 24px
+
 .blog
   padding: 80px 0
+
+  +media(m)
+    padding-bottom: 0
   
 .blog__title,
 .blog__subtitle
   text-align: left
+
+  +media(m)
+    text-align: center
   
 .blog-list
-  margin-top: 56px
+  margin: 56px auto 0
   display: flex
   justify-content: center
+
+  +media(m)
+    margin-top: 40px
+    flex-wrap: wrap
   
 .blog-list__item
   width: 100%
   max-width: 350px
+
+  +media(m)
+    max-width: 337px
+    width: 47.8%
   
 .blog-list__item + .blog-list__item
   margin-left: 30px
+  
+.blog-list__item:last-child
+  +media(m)
+    max-width: 704px
+    width: 100%
+    margin: 40px 0 0
   
 .blog-post
   display: flex
@@ -146,9 +218,18 @@
   padding: 90px 23px 32px
   background: #121824
   border-radius: 12px
+
+  +media(m)
+    max-width: initial
+    padding: 40px 23px
+    text-align: center
   
 .medium-logo
   display: block
   max-width: 228px
   width: 100%
   margin: 0 auto
+
+  +media(m)
+    max-width: 165px
+    margin-bottom: 40px 

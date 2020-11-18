@@ -72,31 +72,7 @@ layout: default
     <div class="container">
       <h2 class="section-title section-title--dark blog__title">See how our product develops</h2>
       <p class="section-subtitle section-subtitle--dark blog__subtitle">Visit our Medium blog for fresh updates</p>
-      <ul class="blog-list">
-        <li class="blog-list__item">
-          <a target="blank" href="https://medium.com/at-par/private-markets-2-0-abca1cdf5809" class="blog-post">
-            <img src="/assets/images/posts/post1.jpeg" class="blog-post__image">
-            <span class="blog-post__content">
-              <h3 class="blog-post__title">Private Markets 2.0</h3>
-              <p class="blog-post__text text text--dark">Make Private Market Transactions investible like a “Blue Chip”.</p>
-              <div>
-                <span class="arrow-link">READ MORE</span>
-              </div>
-            </span>
-          </a>
-        </li>
-        <li class="blog-list__item">
-          <a target="blank" href="https://medium.com/at-par/atpar-welcomes-new-investors-and-board-member-6ba6f4234d7b" class="blog-post">
-            <img src="/assets/images/posts/post2.jpeg" class="blog-post__image">
-            <span class="blog-post__content">
-              <h3 class="blog-post__title">atpar Welcomes new Investors and Board Member</h3>
-              <p class="blog-post__text text text--dark">We are thrilled to announce today our two follow-on investors Eden Block and Christoph Jentzsch as well as Lex Sokolin as a new board member.</p>
-              <div>
-                <span class="arrow-link">READ MORE</span>
-              </div>
-            </span>
-          </a>
-        </li>
+      <ul id="medium-posts" class="blog-list">
         <li class="blog-list__item">
           <a target="_blank" href="https://medium.com/at-par" class="medium-link">
             <img class="medium-logo" src="/assets/images/logotypes/medium@1x.png" srcset="/assets/images/logotypes/medium@2x.png" alt="medium">
@@ -110,3 +86,5 @@ layout: default
   </section>
   {% include cta.html %}
 </main>
+
+<script src="/assets/js/medium-posts.js"></script>

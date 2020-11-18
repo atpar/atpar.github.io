@@ -55,53 +55,90 @@ id: index
 			</ul>
 		</div>
 	</section>
-	<section class="feedback">
+	<section class="feedback-section">
 		<div class="container">
-			<ul class="feedback__list">
-				<li class="feedback__item">
-					<p class="feedback__text text">We've been very impressed with the technology developed by atpar, we're excited to leverage their software to interface with traditional banks and to fully automate finance.</p>
-					<div class="feedback__logo-wrapper">
-						<img
-							src="/assets/images/logotypes/tokensoft@1x.png"
-							srcset="/assets/images/logotypes/tokensoft@2x.png"
-							alt="tokensoft logo"
-							class="feedback__logo tokensoft-logo"
-						>
+			<div class="feedback-section__content">
+				<div class="swiper-container feedback-list">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="feedback-wrapper">
+								<div class="feedback">
+									<p class="feedback__text text">We've been very impressed with the technology developed by atpar, we're excited to leverage their software to interface with traditional banks and to fully automate finance.</p>
+									<div class="feedback__logo-wrapper">
+										<img
+											src="/assets/images/logotypes/tokensoft@1x.png"
+											srcset="/assets/images/logotypes/tokensoft@2x.png"
+											alt="tokensoft logo"
+											class="feedback__logo tokensoft-logo"
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="feedback-wrapper">
+								<div class="feedback">
+									<p class="feedback__text text">Integrating with the atpar digital securities solution was straightforward and allows us to offer our clients a full-lifecycle service for DLT-based securities.</p>
+									<div class="feedback__logo-wrapper">
+										<img
+											src="/assets/images/logotypes/metaco.svg"
+											alt="metaco logo"
+											class="feedback__logo metaco-logo"
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="feedback-wrapper">
+								<div class="feedback">
+									<p class="feedback__text text">atpar provides a very sophisticated solution to manage financial contracts on the blockchain. Working with their team in the scope of our PoC has been a pleasure!</p>
+									<div class="feedback__logo-wrapper">
+										<img
+											src="/assets/images/logotypes/swisspeers@1x.png"
+											srcset="/assets/images/logotypes/swisspeers@2x.png"
+											alt="tokensoft logo"
+											class="feedback__logo swisspeers-logo"
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="feedback-wrapper">
+								<div class="feedback">
+									<p class="feedback__text text">atpar's unique capabilities help us to automate and scale the servicing of digital securities across asset classes</p>
+									<div class="feedback__logo-wrapper">
+										<img
+											src="/assets/images/logotypes/bankhaus@1x.png"
+											srcset="/assets/images/logotypes/bankhaus@2x.png"
+											alt="bankhaus scheich logo"
+											class="feedback__logo bankhaus-img"
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="feedback-wrapper">
+								<div class="feedback">
+									<p class="feedback__text text">atpar provides not only a frictionless API to a complex set of technologies but also reduces time to market to an absolute minimum. It’s like AWS for Blockchain Financial Services.</p>
+									<div class="feedback__logo-wrapper">
+										<img
+											src="/assets/images/logotypes/2poly@1x.png"
+											srcset="/assets/images/logotypes/2poly@2x.png"
+											alt="metaco logo"
+											class="feedback__logo poly-img"
+										>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-				</li>
-				<li class="feedback__item">
-					<p class="feedback__text text">Integrating with the atpar digital securities solution was straightforward and allows us to offer our clients a full-lifecycle service for DLT-based securities.</p>
-					<div class="feedback__logo-wrapper">
-						<img
-							src="/assets/images/logotypes/metaco.svg"
-							alt="metaco logo"
-							class="feedback__logo metaco-logo"
-						>
-					</div>
-				</li>
-				<li class="feedback__item">
-					<p class="feedback__text text">atpar provides a very sophisticated solution to manage financial contracts on the blockchain. Working with their team in the scope of our PoC has been a pleasure!</p>
-					<div class="feedback__logo-wrapper">
-						<img
-							src="/assets/images/logotypes/swisspeers@1x.png"
-							srcset="/assets/images/logotypes/swisspeers@2x.png"
-							alt="tokensoft logo"
-							class="feedback__logo swisspeers-logo"
-						>
-					</div>
-				</li>
-				<li class="feedback__item">
-					<p class="feedback__text text">atpar provides not only a frictionless API to a complex set of technologies but also reduces time to market to an absolute minimum. It’s like AWS for Blockchain Financial Services.</p>
-					<div class="feedback__logo-wrapper">
-						<img
-							src="/assets/images/logotypes/2poly@1x.png"
-							srcset="/assets/images/logotypes/2poly@2x.png"
-							alt="metaco logo"
-							class="feedback__logo poly-img"
-						>
-					</div>
-				</li>
-			</ul>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
 		</div>
 	</section>
 	<section id="features" class="features">
@@ -193,8 +230,8 @@ id: index
 	{% include cta.html %}
 	<section class="use-cases">
 		<div class="container">
-			<h2 class="section-title section-title--dark">Use cases</h2>
-			<p class="section-subtitle use-cases__subtitle">See how diverse players participate in <b>Trustless Capital Markets</b></p>
+			<h2 class="section-title section-title--dark use-cases__title">Use cases</h2>
+			<p class="section-subtitle section-subtitle--dark use-cases__subtitle">See how diverse players participate in <b>Trustless Capital Markets</b></p>
 		</div>
 		<div class="use-cases-container">
 			{% include use-cases.html %}
@@ -218,6 +255,9 @@ id: index
 					<img class="dalw-img" src="/assets/images/logotypes/dalw@1x.png" srcset="/assets/images/logotypes/dalw@2x.png" alt="dalaw">
 				</li>
 				<li class="partners__item">
+					<img class="bankhaus-img" src="/assets/images/logotypes/bankhaus@1x.png" srcset="/assets/images/logotypes/bankhaus@2x.png" alt="bankhaus scheich">
+				</li>
+				<li class="partners__item">
 					<img class="thebond-img" src="/assets/images/logotypes/thebond@1x.png" srcset="/assets/images/logotypes/thebond@2x.png" alt="bond factory">
 				</li>
 				<li class="partners__item">
@@ -232,4 +272,6 @@ id: index
 </main>
 
 <script src="/assets/js/text-animation.js"></script>
-	
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="/assets/js/swiper-init.js"></script>

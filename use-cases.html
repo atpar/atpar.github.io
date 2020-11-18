@@ -3,14 +3,16 @@ layout: default
 ---
 
 <header>
-  <div class="container">
-    {% include topbar.html %}
-    <div class="subpage-hero">
+  {% include topbar.html %}
+  <div class="subpage-hero">
+    <div class="container">
       <img src="/assets/images/cube-pink.svg" alt="cube">
       <h1 class="subpage-hero__title">Use Cases</h1>
       <p class="subpage-hero__text use-cases-hero__text">
         Together with our clients and partners we build the future of digital capital markets. <b>Inspired? Get in touch!</b>
       </p>
+    </div>
+    <div class="use-cases-container">
       {% include use-cases.html %}
     </div>
   </div>
@@ -27,7 +29,7 @@ layout: default
               <ul>
                 <li class="use-case-item">
                   <h3 class="use-case-item__title">⭐ Opportunity</h3>
-                  <p class="use-case-item__text">The client, a leading securities specialist, is rolling out a 360-degree digital securities marketplace including security structuring and issuance, custody for digital assets & securities, a trading venue and management services. A DLT register and digital tokens representing the ownership in a security build the basis of that marketplace.</p>
+                  <p class="use-case-item__text">Bankhaus Scheich, a leading securities specialist, is rolling out a 360-degree digital securities marketplace including security structuring and issuance, custody for digital assets & securities, a trading venue and management services. A DLT register and digital tokens representing the ownership in a security build the basis of that marketplace.</p>
                 </li>
                 <li class="use-case-item">
                   <h3 class="use-case-item__title">‍🚀  Goals:</h3>
@@ -48,7 +50,10 @@ layout: default
                   </p>
                 </li>
                 <li class="use-case-item use-case-item--partner">
-                  🤝 Partner: Leading securities specialist
+                  🤝 Partner:
+                  <a href="https://www.bankhaus-scheich.de/en/" target="_blank" class="use-case-item__img-wrapper">
+                    <img class="bankhaus-img" src="/assets/images/logotypes/bankhaus@1x.png" srcset="/assets/images/logotypes/bankhaus@2x.png" alt="bankhaus scheich logo">
+                  </a>
                 </li>
               </ul>
             </div>
@@ -95,7 +100,7 @@ layout: default
               </ul>
             </div>
           </div>
-          <div class="text-center">
+          <div class="read-more-link-wrapper">
             <a href="https://medium.com/at-par/private-markets-2-0-abca1cdf5809" class="arrow-link" target="_blank">Read more</a>
           </div>
         </li>
