@@ -125,7 +125,11 @@
     padding: 120px 0 80px
 
   +media(s)
-    padding: 122px 0 40px
+    padding: 80px 0 40px
+
+.feedback-section .container
+  +media(s, 167px)
+    padding: 0
 
 .feedback-section__content
   position: relative
@@ -134,6 +138,11 @@
   width: 31px
   height: 31px
   left: -16px !important
+
+  +media(s, 167px)
+    top: auto !important
+    left: 50% !important
+    transform: translate(-200%, 0)
 
 .swiper-button-prev:after
   content: '' !important
@@ -146,6 +155,11 @@
   height: 31px
   right: -16px !important
   transform: rotate(180deg)
+
+  +media(s, 167px)
+    top: auto !important
+    right: 50% !important
+    transform: translate(200%, 0) rotate(180deg)
 
 .swiper-button-next:after
   content: '' !important
@@ -172,7 +186,7 @@
 
   +media(m)
     max-width: initial
-    padding: 80px 24px 8px
+    padding: 80px 24px 24px
 
 .feedback:nth-child(3n)
   margin-right: 0
@@ -245,6 +259,9 @@
 .features
   padding: 80px 0
 
+  +media(s)
+    padding: 40px 0
+
 .features__row
   display: flex
   justify-content: center
@@ -254,13 +271,20 @@
   +media(m)
     flex-direction: column
     align-items: center
-  
+
+  +media(s)
+    margin-top: 24px
+
 .laptop-img
-  max-width: 566px
+  width: 566px
+  max-width: 100%
   
   +media(m, 90px)
     margin-top: 40px
   
+  +media(s)
+    display: none
+
 .features-card
   width: 48.6%
   margin-bottom: 30px
@@ -275,11 +299,18 @@
     max-width: 540px
     margin-bottom: 0
 
+  +media(s)
+    font-size: 18px
+    line-height: 150%
+
 .features-card:nth-child(2)
   margin-left: 2.7%
 
   +media(m)
     margin: 32px 0 0
+
+  +media(s)
+    margin-top: 24px
 
 .features-card:last-child
   width: 100%
@@ -291,6 +322,10 @@
 
   +media(m)
     margin-top: 77px
+
+  +media(s)
+    margin-top: 24px
+    padding: 32px 21px 16px
 
 .features-card__content
   max-width: 428px
@@ -348,6 +383,11 @@
   line-height: 150%
   color: #4B5974
 
+  +media(s)
+    padding: 0
+    font-size: 12px
+    line-height: 18px
+
 .features-card__item img
   margin-right: 24px
 
@@ -365,8 +405,14 @@
   +media(m)
     padding: 80px 0 160px
 
+  +media(s)
+    padding: 0 0 80px
+
 .use-cases__subtitle
   margin-bottom: 42px
+
+  +media(s)
+    margin-bottom: 47px
 
 .use-cases__title,
 .use-cases__subtitle
@@ -376,14 +422,25 @@
 .partners
   padding: 0 0 160px
 
+  +media(m)
+    padding-bottom: 80px
+  
 .partners__title
   margin-bottom: 8px
+  
+.partners__subtitle
+  +media(s)
+    max-width: 288px
+    margin: 0 auto
   
 .partners__list
   display: flex
   flex-wrap: wrap
   justify-content: center
   margin-top: 40px
+
+  +media(s)
+    margin-top: 8px
 
 .partners__item
   display: flex
@@ -396,27 +453,52 @@
 
   +media(m)
     max-width: 200px
+
+  +media(m)
+    max-width: 151px
+    height: 48px
   
 .metaco-img
   width: 121px
 
+  +media(s)
+    width: 72px
+
 .tokensoft-img
   width: 175px
 
+  +media(s)
+    width: 105px
+  
 .cashlink-img
   width: 133px
+
+  +media(s)
+    width: 80px
 
 .dalw-img
   width: 207px
 
+  +media(s)
+    width: 124px
+
 .thebond-img
   width: 174px
+
+  +media(s)
+    width: 104px
 
 .poly-img
   width: 104px
 
+  +media(s)
+    width: 62px
+
 .bankhaus-img
   width: 105px
+
+  +media(s)
+    width: 90px
   
 .cube
   animation-name: floating

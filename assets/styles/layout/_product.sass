@@ -8,17 +8,38 @@
 .services__row
   display: flex
 
+  +media(s, 167px)
+    flex-direction: column
+
 .services__title
   text-align: left
   margin-bottom: 8px
+
+  +media(s, 167px)
+    text-align: center
 
 .services__subtitle
   max-width: 335px
   margin-bottom: 56px
   text-align: left
 
+  +media(s, 167px)
+    text-align: center
+    margin: 0 auto 40px
+    max-width: 288px
+
+.services-list
+  +media(s, 167px)
+    display: flex
+    align-items: center
+    overflow-x: auto
+    padding-bottom: 8px
+  
 .services-list__item + .services-list__item
   margin-top: 10px
+
+  +media(s, 167px)
+    margin: 0 0 0 8px
   
 .services-list__button
   position: relative
@@ -38,6 +59,10 @@
     font-size: 16px
     line-height: 150%
 
+  +media(s, 167px)
+    padding: 4px 42px 4px 16px
+    white-space: nowrap
+  
 .services-list__button.active
   background: #19202F
   border-radius: 12px
@@ -61,10 +86,23 @@
   +media(m)
     max-width: 213px
   
+  +media(s, 167px)
+    max-width: initial
+  
 .services__content
   margin-left: 30px
   text-align: center
+
+  +media(s, 167px)
+    margin: 32px 0 0
   
+.services__content-header
+  +media(s, 167px)
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    margin-bottom: 40px
+    
 .service
   display: none
 
@@ -74,6 +112,10 @@
 .service__icon
   width: 140px
   height: 140px
+
+  +media(s, 167px)
+    width: 88px
+    height: 88px
   
 .service__title
   margin: 40px 0
@@ -86,6 +128,9 @@
   +media(m)
     font-size: 24px
 
+  +media(s, 167px)
+    margin: 0 0 0 20px
+
 .service__text
   font-size: 20px
   line-height: 32px
@@ -95,16 +140,23 @@
   +media(m)
     font-size: 16px
     line-height: 24px
+
+  +media(s, 167px)
+    font-size: 14px
+    line-height: 150%
   
 .service__text + .service__text
   margin-top: 30px
 
   +media(m)
     margin-top: 40px
+
+  +media(s, 167px)
+    margin-top: 24px
   
 .benefits
   padding: 160px 0 29px
-  overflow: hidden
+  overflow: 
 
   +media(m)
     padding: 80px 0 40px
@@ -121,6 +173,11 @@
   +media(m, 90px)
     margin: 80px -8px 0
 
+  +media(s)
+    flex-direction: column
+    align-items: center
+    margin: 24px 0 0
+
 .benefits-list__item
   max-width: 168px
   width: 100%
@@ -130,6 +187,17 @@
   +media(m, 90px)
     margin: 0 8px 40px
 
+  +media(s)
+    display: flex
+    align-items: center
+    max-width: 240px
+    margin: 0 0 24px
+
+.benefits-list__icon
+  +media(s)
+    width: 56px
+    height: 56px
+  
 .benefits-list__text
   margin-top: 24px
   font-weight: 700
@@ -138,11 +206,20 @@
   text-align: center
   color: #121824
 
+  +media(s)
+    text-align: left
+    font-size: 18px
+    line-height: 120%
+    margin: 0 0 0 24px
+
 .security
   padding: 80px 0
 
   +media(m)
     padding: 80px 0 0
+
+  +media(s)
+    padding: 40px 0 0
 
 .security__row
   display: flex
@@ -161,6 +238,10 @@
   +media(m)
     max-width: initial
 
+  +media(s)
+    font-size: 40px
+    line-height: 120%
+
   span
     width: 417px
     height: 130px
@@ -169,6 +250,9 @@
     +media(m)
       width: 100%
       text-align: center
+
+    +media(s)
+      height: 145px
   
 .security__content
   max-width: 634px
@@ -192,6 +276,9 @@
 .platform
   padding: 80px 0
 
+  +media(s)
+    padding: 40px 0
+
 .platform__content
   padding-top: 80px
   border-top: 1px solid #E5E9F8
@@ -202,21 +289,35 @@
   justify-content: space-between
   margin-top: 80px
 
+  +media(s, 167px)
+    flex-direction: column
+    margin-top: 24px
+
 .layers-img-desktop
   max-width: 341px
 
   +media(m)
     display: none
 
+  +media(s, 167px)
+    display: block
+    max-width: 174px
+
 .layers-img-tablet
   max-width: 246px
 
   +media(m)
     display: block
+
+  +media(s, 167px)
+    display: none
   
 .layers-list
   max-width: 728px
   margin-left: 30px
+
+  +media(s, 167px)
+    margin: 24px 0 0
 
 .layer
   padding: 32px
@@ -224,8 +325,17 @@
   box-shadow: 0px 7px 18px rgba(224, 228, 241, 0.5)
   border-radius: 12px
 
+  +media(s, 167px)
+    padding: 16px
+  
 .layer + .layer
   margin-top: 40px
+
+  +media(m)
+    margin-top: 8px
+
+  +media(s, 167px)
+    margin-top: 24px
 
 .layer__title
   margin-bottom: 10px
@@ -235,11 +345,17 @@
 
   +media(m)
     font-size: 16px
+
+  +media(s, 167px)
+    font-size: 18px
   
 .layer__text
   font-size: 14px
   line-height: 150%
   color: #4B5974
+
+  +media(s, 167px)
+    font-size: 12px
   
 .open-source
   padding: 80px 0
@@ -247,11 +363,17 @@
   +media(m)
     padding: 80px 0 0
 
+  +media(s)
+    padding: 40px 0
+
 .open-source__content
   padding: 56px 14px
   background: #FFE7EE
   border-radius: 12px
   text-align: center
+
+  +media(s)
+    padding: 40px 14px
 
 .open-source__text
   margin: 40px auto
@@ -260,3 +382,15 @@
 
   +media(m)
     max-width: 634px
+
+  +media(s)
+    margin: 24px auto
+
+  b
+    +media(s)
+      display: block
+      margin-bottom: 24px
+
+.open-source__btn
+  +media(s)
+    font-size: 11px

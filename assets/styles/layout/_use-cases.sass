@@ -8,6 +8,9 @@
   padding: 0 32px
   overflow-x: auto
 
+  +media(s, 167px)
+    padding: 0 16px
+
 .use-cases-nav__item
   width: 100%
   min-width: 255px
@@ -15,6 +18,9 @@
 .use-cases-nav__item + .use-cases-nav__item
   margin-left: 30px
 
+  +media(s)
+    margin-left: 8px
+  
 .use-case-card
   display: flex
   flex-direction: column
@@ -43,6 +49,10 @@
 
 .use-case-card__title
   font-weight: bold
+
+  +media(s)
+    font-size: 18px
+    line-height: 150%
 
 .use-cases-hero__text
   max-width: 642px
