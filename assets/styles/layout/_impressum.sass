@@ -1,12 +1,24 @@
+.impressum__container
+  +media(s)
+    padding: 0
+
 .impressum__row
   display: flex
   justify-content: space-between
   padding-bottom: 160px
 
+  +media(s)
+    flex-direction: column
+    padding-bottom: 40px
+
 .text-content
   padding: 24px 0
 
+  +media(s)
+    padding: 40px 16px
+  
   h2
+    margin-bottom: 8px
     font-weight: bold
     font-size: 24px
     line-height: 120%
@@ -30,6 +42,16 @@
   margin-right: 80px
   padding: 70px 48px
   background: #121824
+
+  +media(m, 90px)
+    margin-right: 30px
+
+  +media(s, 167px)
+    padding: 40px 16px
+
+  +media(s)
+    max-width: initial
+    margin-right: 0
 
 .sidebar__section + .sidebar__section
   margin-top: 56px
