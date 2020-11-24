@@ -79,6 +79,9 @@
   background: url('/assets/images/icons/arrow-right.svg') center no-repeat
   background-size: contain
 
+  +media(s, 167px)
+    transform: translateY(-50%) rotate(90deg)
+
 .services__sidebar
   max-width: 350px
   width: 100%
@@ -156,7 +159,6 @@
   
 .benefits
   padding: 160px 0 29px
-  overflow: hidden
 
   +media(m)
     padding: 80px 0 40px
