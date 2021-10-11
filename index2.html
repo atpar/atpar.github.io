@@ -1,0 +1,94 @@
+---
+layout: default
+id: index
+---
+<header class="header">
+	<div class="container">
+		{% include topbar.html %}
+		<div class="home-hero">
+			<div class="home-hero__content">
+				<h1 class="home-hero__title">DeFi <br> Consulting</h1>
+				<p
+					class="typewrite home-hero__slogan"
+					data-period="2000"
+					data-type='["Mechanisms", "Simulation", "Validation", "Implementation"]'
+				>
+					<span></span>
+				</p>
+			</div>
+			{% include hero-image.html %}
+		</div>
+	</div>
+</header>
+<main>
+	<section id="decentral_depository" class="depository section-dark">
+		<div class="container">
+			<h2 class="section-title section-title--light depository__title">Decentralized Finance</h2>
+			<p class="section-subtitle section-subtitle--light">on Ethereum</p>
+			<ul class="depository-list">
+				<li class="depository-list__item">
+					<div class="depository-list__icon-wrapper">
+						<img src="/assets/images/icons/lock.svg" alt="lock" class="depository-list__icon">
+					</div>
+					<h3 class="depository-list__title">Mechanism Design</h3>
+					<p class="depository-list__text text text--light">Complex DeFi mechanisms with clear specification</p>
+				</li>
+				<li class="depository-list__item">
+					<div class="depository-list__icon-wrapper">
+						<img src="/assets/images/icons/play.svg" alt="play" class="depository-list__icon">
+					</div>
+					<h3 class="depository-list__title">Simulation & Validation</h3>
+					<p class="depository-list__text text text--light">Agent based DeFi simulations and validation against historical data </p>
+				</li>
+				<li class="depository-list__item">
+					<div class="depository-list__icon-wrapper">
+						<img src="/assets/images/icons/trending-up.svg" alt="trend up" class="depository-list__icon">
+					</div>
+					<h3 class="depository-list__title">Implementation</h3>
+					<p class="depository-list__text text text--light">Realization of core DeFi components in solidity</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="partners" class="partners">
+		<div class="container">
+            <ul class="partners__list">
+				<li class="partners__item">Advisor for &nbsp;
+					<img class="barnbridge-img" src="/assets/images/logotypes/barnbridge.svg" alt="barnbridge">
+				</li>
+			</ul>
+			<ul class="partners__list">
+				<li class="partners__item">
+					<img class="metaco-img" src="/assets/images/logotypes/metaco.svg" alt="metaco">
+				</li>
+				<li class="partners__item">
+					<img class="tokensoft-img" src="/assets/images/logotypes/tokensoft@1x.png" srcset="/assets/images/logotypes/tokensoft@2x.png" alt="tokensoft">
+				</li>
+				<li class="partners__item">
+					<img class="cashlink-img" src="/assets/images/logotypes/cashlink@1x.png" srcset="/assets/images/logotypes/cashlink@2x.png" alt="cashlink">
+				</li>
+				<li class="partners__item">
+					<img class="dalw-img" src="/assets/images/logotypes/dalw@1x.png" srcset="/assets/images/logotypes/dalw@2x.png" alt="dalaw">
+				</li>
+				<li class="partners__item">
+					<img class="bankhaus-img" src="/assets/images/logotypes/bankhaus@1x.png" srcset="/assets/images/logotypes/bankhaus@2x.png" alt="bankhaus scheich">
+				</li>
+				<li class="partners__item">
+					<img class="thebond-img" src="/assets/images/logotypes/thebond@1x.png" srcset="/assets/images/logotypes/thebond@2x.png" alt="bond factory">
+				</li>
+				<li class="partners__item">
+					<img class="poly-img" src="/assets/images/logotypes/2poly@1x.png" srcset="/assets/images/logotypes/2poly@2x.png" alt="2poly">
+				</li>
+				<li class="partners__item">
+					<img class="fountain-img" src="/assets/images/logotypes/fountain.svg" alt="fountain">
+				</li>
+			</ul>
+		</div>
+	</section>
+</main>
+
+<script src="/assets/js/text-animation.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="/assets/js/swiper-init.js"></script>
